@@ -8,7 +8,7 @@
 	require "../configs/config.php";
 
 	try {
-		echo "<br> Connecting to " . $host . " as " . $username . " with password " . $password . "<p>";
+		echo "<br> Connecting to database. <p>";
 		$connection = new PDO("mysql:host=$host", $username, $password, $options);
 		$sql = file_get_contents("data/init.sql");
 		$connection->exec($sql);
