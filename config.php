@@ -1,7 +1,7 @@
 <?php
-  $host       = "mysql";
-  $username   = "root";
-  $password   = "password";
+  $host       = "<insert database endpoint";
+  $username   = "<insert username>";
+  $password   = "<insert password>";
   $dbname     = "tasks"; 
   $dsn        = "mysql:host=$host;dbname=$dbname"; 
   $options    = array(

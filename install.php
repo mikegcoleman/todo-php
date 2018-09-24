@@ -8,7 +8,7 @@
 echo "creating database";
 echo "<br>";
 
-require "./config.php";
+require "../configs/config.php";
 
 try {
     echo "<br> Connecting to " . $host . " as " . $username . " with password " . $password . "<p>";
