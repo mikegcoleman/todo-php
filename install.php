@@ -6,6 +6,7 @@
 
 	<?php
 	require "./config.php";
+	echo "Host: " . $host . "<br>";
 
 	try {
 		echo "<br> Connecting to database. <p>";
