@@ -2,7 +2,7 @@
   $host       = getenv('HOST');
   $username   = getenv('USER');
   $password   = getenv('PASSWORD');
-  echo "--------------";
+  echo "--------------<br>";
   echo "Environment variables: <br>";
   echo "Host: " . $host . "<br";
   echo "User: " . $username . "<br";
