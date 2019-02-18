@@ -4,7 +4,7 @@
      header('Location: /index.php');
     } 
     
-    require "../configs/config.php";
+    require "./config.php";
     require "./common.php";
 
     if (isset($_GET['id'])) {

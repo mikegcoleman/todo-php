@@ -1,7 +1,7 @@
 
 <?php require("./templates/header.php"); ?>
 <?php require("./common.php"); ?>
-<?php require("../configs/config.php"); ?>
+<?php require("./config.php"); ?>
 
     <div class="container">
         <?php require "./templates/nav.php" ?>

@@ -1,5 +1,5 @@
 <?php
-    require "../configs/config.php";
+    require "./config.php";
     
     try {
         $connection = new PDO($dsn, $username, $password, $options);

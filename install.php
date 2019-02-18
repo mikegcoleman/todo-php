@@ -5,7 +5,7 @@
 	<h2>Creating Database</h2> <br>
 
 	<?php
-	require "../configs/config.php";
+	require "./config.php";
 
 	try {
 		echo "<br> Connecting to database. <p>";
