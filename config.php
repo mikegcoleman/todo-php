@@ -9,6 +9,9 @@
   echo "Password: " . $password . "<br";
 
   $dsn        = "mysql:host=$host;dbname=tasks";
+
+  echo $dsn . "<-dsn <br>";
+
   $options    = array(
                   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
                 );
