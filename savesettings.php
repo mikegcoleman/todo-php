@@ -17,7 +17,8 @@
         $usernameValue  = "\$username       = '" . $_POST['name'] . "';\n";
         $passwordValue  = "\$password       = '" . $_POST['password'] . "';\n";
 
-        $configFile = fopen("./connectvalues.php", "w");
+        $configFile = fopen("./connectvalues.php", "w") or die("Unable to write file!");
+        echo $configFile;
         fwrite($configFile, "<?php\n");
         fwrite($configFile, $hostValue);
         fwrite($configFile, $usernameValue);
