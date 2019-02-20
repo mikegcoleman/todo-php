@@ -1,7 +1,7 @@
 
 <?php require("./templates/header.php"); ?>
 <?php require("./common.php"); ?>
-<?php require("./config.php"); ?>
+<?php require("../configs/config.php"); ?>
 
     <div class="container">
         <?php require "./templates/nav.php" ?>
@@ -30,3 +30,4 @@
         </div>
     </div> <!-- container -->
 
+<?php require("./templates/footer.php"); ?>
