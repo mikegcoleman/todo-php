@@ -1,8 +1,8 @@
 <?php
-  $host       = "<endpoint>";
-  $username   = "<username>";
-  $password   = "<password>";
+  require("./connectvalues.php");
+
   $dsn        = "mysql:host=$host;dbname=tasks";
+
   $options    = array(
                   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
                 );

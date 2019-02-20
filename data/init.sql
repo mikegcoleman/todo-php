@@ -1,4 +1,4 @@
-CREATE DATABASE tasks;
+CREATE DATABASE IF NOT EXISTS tasks;
 
 use tasks;
 

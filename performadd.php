@@ -1,5 +1,5 @@
 <?php 
-    require "../configs/config.php";
+    require "./config.php";
     require "./common.php";
         
         try {
