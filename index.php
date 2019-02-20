@@ -13,7 +13,8 @@
       $failed=FALSE;
 
 	} catch(PDOException $error) {
-      echo "<h4>Error accessing database - Have you configured the connection settings?</h4>";
+      echo "<h4>Error accessing database - Have you configured the connection settings?</h4><br><br>";
+      echo $sql . "<br>" . $error->getMessage();
       $failed=TRUE;
 	}
 ?>
