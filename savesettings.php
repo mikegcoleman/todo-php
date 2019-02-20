@@ -11,6 +11,8 @@
 
 <div class="container">
     <?php 
+        //write out the connection settings to the connectionvalues.php file
+        //this file is required by config.php
         require("./templates/nav.php"); 
     
         $hostValue      = "\$host           = '" . $_POST['host'] . "';\n";
