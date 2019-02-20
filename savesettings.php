@@ -3,31 +3,43 @@
         header('location:../index.php');
         exit;
     }
-?>
 
-<?php 
-	require("./templates/header.php"); 
-?>
 
-<div class="container">
-    <?php 
+
         //write out the connection settings to the connectionvalues.php file
         //this file is required by config.php
         require("./templates/nav.php"); 
-    
+        require("./templates/header.php"); 
+
+        $filename="./connectvalues.php";
+
+        echo "<h4>Updating Configuration File: " . $filename . "</h4><br><br>";
+
         $hostValue      = "\$host           = '" . $_POST['host'] . "';\n";
         $usernameValue  = "\$username       = '" . $_POST['name'] . "';\n";
         $passwordValue  = "\$password       = '" . $_POST['password'] . "';\n";
 
-        $configFile = fopen("./connectvalues.php", "w");
- 
-        fwrite($configFile, "<?php\n");
-        fwrite($configFile, $hostValue);
-        fwrite($configFile, $usernameValue);
-        fwrite($configFile, $passwordValue);
-        fclose($configFile);
+        echo $hostValue . "<br>";
+        echo $usernameValue . "<br>";
+        echo $passwordValue . "<br>";
+
+        if (is_writable($filename)) {
+
+            $configFile = fopen($filename, "w");
+    
+            fwrite($configFile, "<?php\n");
+            fwrite($configFile, $hostValue);
+            fwrite($configFile, $usernameValue);
+            fwrite($configFile, $passwordValue);
+            fclose($configFile);
+        } else {
+            echo "ERROR! Cannot write to configuration file: " . $filename . ". <br>"
+        }
+
+       
     ?>
 
+<div class="container">
     <h4>Saving settings and testing connection</h4> <br>
 
     <?php
