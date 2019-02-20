@@ -1,5 +1,5 @@
 <?php
-    require "./config.php";
+    require "../configs/config.php";
     require "./common.php";
     /*
     if (isset($_POST['submit'])) {
@@ -129,3 +129,4 @@
         } ?>
     </div> <!-- container -->
     
+<?php require("./templates/footer.php"); ?>
