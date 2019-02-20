@@ -1,4 +1,4 @@
 <?php
-$host='localhost';
-$username='root';
-$password='<password>';
+$host           = 'mysql';
+$username       = 'root';
+$password       = 'taskstasks';

@@ -11,6 +11,7 @@ git clone -b loft https://github.com/mikegcoleman/todo-php .
 
 echo "setting ownership on settings file"
 chown bitnami:daemon connectvalues.php
+chmod 664 connectvalues.php
 
 echo "adding db password to settings file"
 sed -i.bak "s/<password>/$(cat /home/bitnami/bitnami_application_password)/;" /opt/bitnami/apache2/htdocs/connectvalues.php

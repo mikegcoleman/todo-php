@@ -13,15 +13,9 @@
 
         $filename="./connectvalues.php";
 
-        echo "<h4>Updating Configuration File: " . $filename . "</h4><br><br>";
-
         $hostValue      = "\$host           = '" . $_POST['host'] . "';\n";
         $usernameValue  = "\$username       = '" . $_POST['name'] . "';\n";
         $passwordValue  = "\$password       = '" . $_POST['password'] . "';\n";
-
-        echo $hostValue . "<br>";
-        echo $usernameValue . "<br>";
-        echo $passwordValue . "<br>";
 
         if (is_writable($filename)) {
 
@@ -33,7 +27,7 @@
             fwrite($configFile, $passwordValue);
             fclose($configFile);
         } else {
-            echo "ERROR! Cannot write to configuration file: " . $filename . ". <br>"
+            echo "ERROR! Cannot write to configuration file: " . $filename . ". <br>";
         }
 
        
