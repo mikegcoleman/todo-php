@@ -9,8 +9,8 @@
 	if (file_exists('./connectvalues.php')) {
 		$contents = file('./connectvalues.php', FILE_IGNORE_NEW_LINES);
 		$valHost 		= getParameter($contents[1]);
-		$valUsername 	= getParameter($contents[3]);
-		$valPassword 	= getParameter($contents[2]);	
+		$valUsername 	= getParameter($contents[2]);
+		$valPassword 	= getParameter($contents[3]);	
 	}
 	else 
 	{
