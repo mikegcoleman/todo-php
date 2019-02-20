@@ -30,4 +30,3 @@
         </div>
     </div> <!-- container -->
 
-<?php require("./templates/footer.php"); ?>

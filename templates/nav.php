@@ -4,6 +4,7 @@
         <div class="navbar-nav">
         <a class="nav-item nav-link active" href="/">List Tasks</a>
         <a class="nav-item nav-link active" href="/addtask.php">Add Task</a>
+        <a class="nav-item nav-link active" href="/settings.php">Settings</a>
         </div>
     </div>
 </nav>
