@@ -1,6 +1,6 @@
-CREATE DATABASE tasks;
+CREATE DATABASE incidents;
 
-use tasks;
+use incidents;
 
 CREATE TABLE tasks (
 	id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
